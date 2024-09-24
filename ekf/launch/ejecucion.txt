@@ -1,0 +1,8 @@
+*******************************************************
+-catkin_make / roscore
+
+-source devel/setup.sh / roslaunch ekf ekf.launch
+
+-source devel/setup.sh / rosservice call /enable_motors "enable: true" / rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+
+-source devel/setup.sh / rosrun ekf ekf.py
