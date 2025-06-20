@@ -31,18 +31,20 @@ roslaunch ekf_localisation localisation.launch
 ## 📁 Project Structure
 
 ```arduino
-mapping_pf/
+ekf_localisation/
 ├── launch/
-│   └── mapping.launch
+│   └── localisation.launch
 ├── scripts/
-│   └── particle_filter.py
-└── msg/
+│   └── ekf_node.py
+├── config/
+│   └── sensors.yaml
 ```
 ## 🛠️ Technologies
 
 * ROS
 * Python
-* Particle Filters
+* Extended Kalman Filter (EKF)
+* Sensor Fusion
 
 ## 👨‍💻 Author
 José García Villalón – GitHub
