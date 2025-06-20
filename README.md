@@ -7,8 +7,10 @@ This ROS-based project fuses multiple sensor sources (IMU, GPS, etc.) to estimat
 ## 🔧 Installation
 
 ```bash
+# Clone the repository
 git clone https://github.com/josgarvil/Multi-sensor-localisation-of-aerial-robots-EKF.git
 
+# Add to your ROS workspace
 cd ~/catkin_ws/src
 ln -s /path/to/Multi-sensor-localisation-of-aerial-robots-EKF ekf_localisation
 cd ~/catkin_ws
@@ -23,28 +25,24 @@ roslaunch ekf_localisation localisation.launch
 ```
 
 * Subscribes to IMU, GPS, and other sensor topics
-
 * Runs EKF to estimate robot pose
-
 * Publishes output to /robot_pose
 
 ## 📁 Project Structure
 
 ```arduino
-ekf_localisation/
+mapping_pf/
 ├── launch/
-│   └── localisation.launch
+│   └── mapping.launch
 ├── scripts/
-│   └── ekf_node.py
-├── config/
-│   └── sensors.yaml
+│   └── particle_filter.py
+└── msg/
 ```
 ## 🛠️ Technologies
 
 * ROS
 * Python
-* Extended Kalman Filter (EKF)
-* Sensor Fusion
+* Particle Filters
 
 ## 👨‍💻 Author
 José García Villalón – GitHub
